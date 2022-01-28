@@ -1,0 +1,14 @@
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to XML.csprojAssemblyReference.cache
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to XML.csproj.CoreCompileInputs.cache
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\Excel to XML.exe
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\Excel to XML.pdb
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to XML.exe
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to XML.pdb
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.dll
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.pdb
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.xml
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to XML.csproj.CopyComplete
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.DataSet.xml

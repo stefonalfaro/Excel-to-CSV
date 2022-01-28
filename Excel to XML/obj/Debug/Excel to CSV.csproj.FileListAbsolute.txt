@@ -1,0 +1,13 @@
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\Excel to CSV.exe
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\Excel to CSV.pdb
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.dll
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.pdb
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.xml
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to CSV.csproj.CoreCompileInputs.cache
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to CSV.csproj.CopyComplete
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to CSV.exe
+C:\Users\Stefon\source\repos\Excel to XML\Excel to XML\obj\Debug\Excel to CSV.pdb
