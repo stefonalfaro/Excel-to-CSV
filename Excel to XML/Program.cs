@@ -21,13 +21,17 @@ namespace Excel_to_XML
 
                 foreach (string f in files)
                 {
-                    string fileName = f;
-                    string NewName = Path.GetFileNameWithoutExtension(fileName) + ".csv";
+                    string fileLocation = f;
+                    string fileName = Path.GetFileNameWithoutExtension(fileLocation);
+                    string NewName = outputFolderLocation+"\\"+ fileName + ".csv";
 
                     DataSet result;
 
-                    result = ExcelToDataSet(fileName);
+                    result = ExcelToDataSet(fileLocation);
                     DataSetToCSV(result.Tables[0], NewName);
+
+                    System.Threading.Thread.Sleep(1000);
+                    File.Delete(fileLocation);
 
                     //Console.Read();
                 }
