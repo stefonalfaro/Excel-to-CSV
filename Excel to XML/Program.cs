@@ -23,11 +23,9 @@ namespace Excel_to_XML
                 {
                     string fileLocation = f;
                     string fileName = Path.GetFileNameWithoutExtension(fileLocation);
-                    string NewName = outputFolderLocation+"\\"+ fileName + ".csv";
+                    string NewName = outputFolderLocation+"\\"+ fileName;
 
-                    DataSet result;
-
-                    result = ExcelToDataSet(fileLocation);
+                    DataSet result = ExcelToDataSet(fileLocation);
                     DataSetToCSV(result.Tables[0], NewName);
 
                     System.Threading.Thread.Sleep(1000);
@@ -43,6 +41,7 @@ namespace Excel_to_XML
             }           
         }
 
+
         public static DataSet ExcelToDataSet(string ExcelFileInput)
         {
             using (var stream = File.Open(ExcelFileInput, FileMode.Open, FileAccess.Read))
@@ -56,8 +55,9 @@ namespace Excel_to_XML
 
         public static void DataSetToCSV(System.Data.DataTable dtDataTable, string strFilePath)
         {
-            StreamWriter sw = new StreamWriter(strFilePath, false);
-            //headers    
+
+            //headers 
+            /*
             for (int i = 0; i < dtDataTable.Columns.Count; i++)
             {
                 sw.Write(dtDataTable.Columns[i]);
@@ -66,32 +66,48 @@ namespace Excel_to_XML
                     sw.Write(",");
                 }
             }
-            sw.Write(sw.NewLine);
+            sw.Write(sw.NewLine);*/
+
+            int count = 1;
             foreach (DataRow dr in dtDataTable.Rows)
             {
-                for (int i = 0; i < dtDataTable.Columns.Count; i++)
+                if (count != 1)
                 {
-                    if (!Convert.IsDBNull(dr[i]))
+                    StreamWriter sw = new StreamWriter(strFilePath + "_" + count + ".csv", false);
+                    for (int i = 0; i < dtDataTable.Columns.Count; i++)
                     {
-                        string value = dr[i].ToString();
-                        if (value.Contains(','))
+                        sw.Write(dtDataTable.Columns[i]);
+                        if (i < dtDataTable.Columns.Count - 1)
                         {
-                            value = String.Format("\"{0}\"", value);
-                            sw.Write(value);
-                        }
-                        else
-                        {
-                            sw.Write(dr[i].ToString());
+                            sw.Write(",");
                         }
                     }
-                    if (i < dtDataTable.Columns.Count - 1)
+                    sw.Write(sw.NewLine);
+                    for (int i = 0; i < dtDataTable.Columns.Count; i++)
                     {
-                        sw.Write(",");
+                        if (!Convert.IsDBNull(dr[i]))
+                        {
+                            string value = dr[i].ToString();
+                            if (value.Contains(','))
+                            {
+                                value = String.Format("\"{0}\"", value);
+                                sw.Write(value);
+                            }
+                            else
+                            {
+                                sw.Write(dr[i].ToString());
+                            }
+                        }
+                        if (i < dtDataTable.Columns.Count - 1)
+                        {
+                            sw.Write(",");
+                        }
                     }
+                    sw.Write(sw.NewLine);
+                    sw.Close();
                 }
-                sw.Write(sw.NewLine);
-            }
-            sw.Close();
+                count++;
+            }          
         }
     }
 
